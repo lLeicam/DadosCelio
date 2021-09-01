@@ -37,6 +37,3 @@ VALUES
     ('Alagoas', 'AL', 'Nordeste', 3.38),
     ('Amapá', 'AP', 'Norte', 0.8),
     ('Paraná', 'PR', 'Sul', 11.51);
-
-
-select count(nome) as 'Numero de estados Centro-Oeste' from `estados` where regiao = 'Centro-Oeste';

@@ -10,6 +10,7 @@ VALUES
     ('Ibiporã', '119', 300.187),
     ('Juazeiro', '2', 6.501),
     ('Cambé', '119', 495.4),
-    ('São Paulo', '22', 1.521);
+    ('São Paulo', '22', 1.521),
+    ('Rolandia', (SELECT id_estado FROM `estados` where nome = 'Paraná'), 460.2);
 
     SELECT * FROM `cidades`

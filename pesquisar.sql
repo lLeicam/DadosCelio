@@ -12,4 +12,18 @@ SELECT * FROM estados WHERE populacao > 10.00;
 
 SELECT * FROM estados WHERE populacao <= 10.00;
 
-select count(nome) as 'Numero de estados Centro-Oeste' from estados where regiao = 'Centro-Oeste'
+SELECT count(nome) as 'Numero de estados Centro-Oeste' from estados where regiao = 'Centro-Oeste'
+
+UPDATE estados set regiao = 'Norte' WHERE nome = 'Amapá'
+
+SELECT id_estado ID, nome ESTADO, regiao REGIÃO from `estados` WHERE regiao like 'N%'
+
+SELECT id_estado ID, nome ESTADO, regiao REGIÃO from `estados` WHERE nome like 'P%'
+
+SELECT id_estado ID, nome ESTADO, regiao REGIÃO from `estados` WHERE nome like '%O'
+
+SELECT id_estado ID, nome ESTADO, regiao REGIÃO from `estados` WHERE nome like '_A%'
+
+SELECT nome, regiao, populacao FROM `estados` WHERE populacao >= 10 order by populacao
+
+SELECT nome, regiao, populacao FROM `estados` WHERE populacao >= 10 order by populacao desc
